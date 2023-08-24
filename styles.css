@@ -23,25 +23,6 @@ a:hover {
     color: #0056b3;
 }
 
-/* .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-} */
-
-.availability-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%; /* Ensuring it takes the full width available */
-}
-
-/* @media (max-width: 768px) {
-    .container {
-        padding: 20px 10px;
-    }
-} */
-
 /* Header */
 header {
     background-color: #007BFF;
@@ -71,15 +52,8 @@ nav li {
 }
 
 /* Main content layout */
-.dual-sections {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.image-section {
-    text-align: center;
-    margin: 20px 0;
+main {
+    margin: 0 15%;
 }
 
 .hannah-img {
@@ -96,15 +70,35 @@ section {
     text-align: left;
 }
 
+.availability-text, .calendar{
+    border-bottom: 1px solid #e1e1e1;
+    padding: 20px 0;
+}
+
+.availability-contact-text {
+    border-top: 1px solid #e1e1e1;;
+    padding: 20px 0;
+} 
+
 section h2 {
     font-size: 2em;
     margin-bottom: 20px;
     text-align: center;
 }
 
-section p, section ul {
-    max-width: 800px;
-    margin: 20px auto;
+.main-section, .availability.text, section ul {
+    max-width: 100%;
+    margin: auto;
+}
+
+.availability {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This will center the iframe horizontally */
+}
+
+#walkthrough h2 {
+    color: darkgray;
 }
 
 .services-list, .services-text {
@@ -112,9 +106,13 @@ section p, section ul {
     text-align: center;
 }
 
+.contact :last-child {
+    text-align: center;
+}
+
 .contact a {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 3px 6px;
     border-radius: 5px;
     background-color: #007BFF;
     color: #fff;
@@ -138,7 +136,9 @@ iframe {
     width: 100%;
     max-width: 800px;
     height: 600px;
+    margin: 20px auto;
 }
+
 /* About section styling */
 #about .about-content {
     display: flex;
@@ -147,10 +147,8 @@ iframe {
     align-items: center;
 }
 
-/* Adjusting Hannah's image size */
-.hannah-img {
-    max-width: 40%;
-    height: auto;
+.calendar-div {
+    align-items: center;
 }
 
 /* Dual sections layout */
@@ -169,63 +167,15 @@ iframe {
     .hannah-img {
         max-width: 100%;
     }
-    .dual-sections {
-        flex-direction: column;
-    }
-}
-
-/* Layout adjustments for the about section */
-#about .about-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    align-items: stretch;  /* Make the children stretch to full height */
-}
-
-/* Text container within the about section */
-.about-text {
-    display: flex;
-    align-items: center;
-    text-align: left;
-}
-
-/* Overall margin adjustment for the main content */
-main {
-    margin: 0 15%;
-}
-
-/* Adjusting Hannah's image size */
-.hannah-img {
-    max-width: 40%;
-    height: auto;
-}
-
-/* Color change for the Free Walkthrough section title */
-#walkthrough h2 {
-    color: darkgrey;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    #about .about-content {
-        flex-direction: column;
-    }
-    .hannah-img {
-        max-width: 100%;
-    }
     main {
         margin: 0 5%;
     }
 }
-
-/* Space between the introductory paragraph and the calendar */
-.availability-container > p:first-of-type {
-    margin-top: 20px;
-    margin-bottom: 40px;
-
-}
-
-/* Space between the calendar and the contact details */
+/* Google Calendar Iframe */
 iframe {
-    margin-bottom: 40px;
+    width: 100%;
+    max-width: 800px; /* This is the maximum width the iframe can grow to */
+    height: 600px;
+    border: none; /* Remove any borders */
+    margin: 0 auto; /* Center the iframe when it has a max-width */
 }
