@@ -64,20 +64,11 @@ section {
 }
 
 /* About Section styling with Flexbox */
-.about-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
+.about-container { text-align: center; }
 
-.about-text {
-    flex: 1;
-    padding-right: 20px;
-}
 
-.about-image {
-    flex-basis: 400px;
-}
+
+
 
 .hannah-img {
     width: 100%;
@@ -127,4 +118,56 @@ nav a {
 
 nav a:hover {
     background-color: #0056b3;
+}
+
+#main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#nav-div {
+    flex: 1;
+    max-width: 250px; 
+    margin-right: 20px;
+}
+
+#body-div {
+    flex: 2;
+    max-width: 650px;
+}
+
+#image-div {
+    flex: 1;
+    max-width: 250px;
+}
+
+footer {
+    text-align: center;
+}
+
+nav li {
+    display: block;
+    text-align: left;
+    padding: 5px 10px;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+#about h2 {
+    text-align: center;
+}
+#about .about-text p {
+    text-align: left;
+}
+#services, #services ul, #services h2, #services li {
+    text-align: center;
+}
+#services ul {
+    padding-left: 0;
+}
+#walkthrough h2, #contact h2 {
+    text-align: center;
 }
