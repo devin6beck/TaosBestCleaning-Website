@@ -1,181 +1,173 @@
 /* General Resets and Typography */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    line-height: 1.6;
-    background-color: #f8f9fa;
-    color: #333;
-    font-size: 18px;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+  font-size: 18px;
 }
 
 a {
-    color: #007BFF;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0056b3;
+  color: #0056b3;
 }
 
 /* Header */
 header {
-    background-color: #007BFF;
-    color: #fff;
-    text-align: center;
-    padding: 60px 0;
-    margin-bottom: 40px;
+  background-color: #007BFF;
+  color: #fff;
+  text-align: center;
+  padding: 60px 0;
+  margin-bottom: 40px;
 }
 
 header h1 {
-    font-size: 2.8em;
-    margin-bottom: 10px;
+  font-size: 2.8em;
+  margin-bottom: 10px;
 }
 
 /* Navigation */
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 10px 0;
 }
 
 nav li {
-    margin: 0 15px;
-    padding: 5px 0;
-    text-align: center;
+  margin: 0 15px;
+  padding: 5px 0;
+  text-align: center;
 }
 
 /* Main content layout */
 main {
-    margin: 0 15%;
+  margin: 0 15%;
 }
 
 .hannah-img {
-    max-width: 40%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  max-width: 40%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Sections */
 section {
-    padding: 40px 0;
-    border-bottom: 1px solid #e1e1e1;
-    text-align: left;
+  padding: 40px 0;
+  border-bottom: 1px solid #e1e1e1;
+  text-align: left;
 }
 
-.availability-text, .calendar{
-    border-bottom: 1px solid #e1e1e1;
-    padding: 20px 0;
+.availability-text, .calendar {
+  border-bottom: 1px solid #e1e1e1;
+  padding: 20px 0;
 }
 
 .availability-contact-text {
-    border-top: 1px solid #e1e1e1;;
-    padding: 20px 0;
-} 
+  border-top: 1px solid #e1e1e1;
+  padding: 20px 0;
+}
 
 section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .main-section, .availability.text, section ul {
-    max-width: 100%;
-    margin: auto;
+  max-width: 100%;
+  margin: auto;
 }
 
 .availability {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* This will center the iframe horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #walkthrough h2 {
-    color: darkgray;
+  color: darkgray;
 }
 
 .services-list, .services-text {
-    list-style-type: none;
-    text-align: center;
+  list-style-type: none;
+  text-align: center;
 }
 
 .contact :last-child {
-    text-align: center;
+  text-align: center;
 }
 
 .contact a {
-    display: inline-block;
-    padding: 3px 6px;
-    border-radius: 5px;
-    background-color: #007BFF;
-    color: #fff;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: #fff;
+  transition: background-color 0.3s ease;
 }
 
 .contact a:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #343a40;
-    color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #343a40;
+  color: #fff;
 }
 
-/* Google Calendar Iframe */
-iframe {
-    width: 100%;
-    max-width: 800px;
-    height: 600px;
-    margin: 20px auto;
-}
-
-/* About section styling */
 #about .about-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
 }
 
 .calendar-div {
-    align-items: center;
+  align-items: center;
 }
 
 /* Dual sections layout */
 .dual-sections {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
-    #about .about-content {
-        flex-direction: column;
-    }
-    .hannah-img {
-        max-width: 100%;
-    }
-    main {
-        margin: 0 5%;
-    }
+  #about .about-content {
+      flex-direction: column;
+  }
+  .hannah-img {
+      max-width: 100%;
+  }
+  main {
+      margin: 0 5%;
+  }
 }
+
 /* Google Calendar Iframe */
 iframe {
-    width: 100%;
-    max-width: 800px; /* This is the maximum width the iframe can grow to */
-    height: 600px;
-    border: none; /* Remove any borders */
-    margin: 0 auto; /* Center the iframe when it has a max-width */
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  border: none;
+  margin: 20px auto;
 }
