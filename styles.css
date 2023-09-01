@@ -70,7 +70,7 @@ section {
   text-align: left;
 }
 
-.availability-text, .calendar {
+.availability-text {
   border-bottom: 1px solid #e1e1e1;
   padding: 20px 0;
 }
@@ -135,10 +135,6 @@ footer {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  align-items: center;
-}
-
-.calendar-div {
   align-items: center;
 }
 
