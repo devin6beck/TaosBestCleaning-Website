@@ -76,32 +76,10 @@ section {
   text-align: left;
 }
 
-.availability-text {
-  border-bottom: 1px solid #e1e1e1;
-  padding: 20px 0;
-}
-
-.availability-contact-text {
-  border-top: 1px solid #e1e1e1;
-  padding: 20px 0;
-}
-
 section h2 {
   font-size: 2em;
   margin-bottom: 20px;
   text-align: center;
-}
-
-.main-section, .availability.text, section ul {
-  max-width: 100%;
-  margin: auto;
-}
-
-.main-section {
-  max-width: 800px;
-  margin: auto;
-  padding: 50px 25px;
-
 }
 
 .availability {
