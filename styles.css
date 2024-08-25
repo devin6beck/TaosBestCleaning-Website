@@ -24,9 +24,18 @@ header {
 	background-color: #333333;
 	color: #fff;
 	text-align: center;
-	padding: 60px 0;
+	padding: 20px 0; /* Adjusted padding to reduce the overall height */
 	margin-bottom: 40px;
-	}
+}
+
+header img {
+	max-width: 100%; /* Ensures the image is responsive */
+	height: auto; /* Maintains the aspect ratio */
+	max-height: 300px; /* Increased value to make the logo twice as big */
+	width: auto; /* Adjust this if you prefer a fixed width instead */
+}
+
+
 header h1 {
 	font-size: 2.8em;
 	margin-bottom: 10px;
@@ -156,7 +165,7 @@ iframe {
 	max-width: 800px;
 	}
 header, .bg-primary {
-	background-color: #007BFF;
+	background-color: #333333;
 	}
 header, .color-white {
 	color: #fff;
