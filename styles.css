@@ -21,11 +21,11 @@ a:hover {
 	}
 /* Header */
 header {
-  display: flex;
-  justify-content: space-between; /* This will allow space for future right-side content */
-  align-items: center;
-  background-color: #f4f4f4; /* Adjust as needed */
-  padding: 20px 50px; /* Increase left and right padding for spacing */
+	background-color: #333333;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0; /* Adjusted padding to reduce the overall height */
+	margin-bottom: 40px;
 }
 
 header img {
@@ -182,3 +182,66 @@ nav ul, .services-list, .flex-display {
 main, iframe, .max-width-800 {
 	max-width: 800px;
 	}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between; /* This will allow space for future right-side content */
+    align-items: center;
+    background-color: #f4f4f4; /* Adjust as needed */
+    padding: 20px 50px; /* Increase left and right padding for spacing */
+}
+
+header .brand-name {
+    font-family: 'Georgia', serif; /* A serif font for a more elegant look */
+    font-size: 24px; /* Adjust size as necessary */
+    color: #4a5753; /* A subtle color, similar to your example */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Make the text bold */
+}
+
+header .brand-name:hover {
+    color: #333; /* Darken the text on hover */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px 50px;
+}
+
+header .brand-name {
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    color: #4a5753;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .brand-name:hover {
+    color: #333;
+}
+
+/* Navigation Menu */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 20px; /* Adds spacing between the links */
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a5753;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #333;
+}
