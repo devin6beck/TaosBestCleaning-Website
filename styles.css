@@ -21,11 +21,11 @@ a:hover {
 	}
 /* Header */
 header {
-	background-color: #333333;
-	color: #fff;
-	text-align: center;
-	padding: 20px 0; /* Adjusted padding to reduce the overall height */
-	margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between; /* This will allow space for future right-side content */
+  align-items: center;
+  background-color: #f4f4f4; /* Adjust as needed */
+  padding: 20px 50px; /* Increase left and right padding for spacing */
 }
 
 header img {
