@@ -119,6 +119,10 @@ footer {
 	gap: 20px;
 	align-items: center;
 	}
+  .about-text p {
+    text-indent: 20px; /* Adjust the value for more or less indentation */
+    margin-bottom: 15px; /* Add spacing between paragraphs */
+  }  
 /* Dual sections layout */
 .dual-sections {
 	display: flex;
@@ -244,4 +248,52 @@ nav a {
 
 nav a:hover {
     color: #333;
+}
+/* Contact Section Layout */
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+/* Contact Info (Left Side) */
+.contact-info {
+  max-width: 50%;
+  padding-right: 20px;
+}
+
+.contact-info h2 {
+  font-size: 2.5em;
+  font-family: 'Georgia', serif; /* Change the font to your preference */
+  color: #333;
+}
+
+.contact-info p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Contact Image (Right Side) */
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Adds rounded corners to the image */
+}
+
+/* Contact Form (Placeholder for Future Formspree) */
+.contact-form {
+  margin-top: 30px;
+}
+
+/* General Styling for Links */
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #007BFF;
 }
