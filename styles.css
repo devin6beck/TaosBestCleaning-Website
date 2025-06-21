@@ -1,272 +1,184 @@
 /* General Resets and Typography */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 body {
-	line-height: 1.6;
-	background-color: #f8f9fa;
-	color: #333;
-	font-size: 18px;
-	}
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+  font-size: 18px;
+}
 a {
-	color: #007BFF;
-	text-decoration: none;
-	transition: color 0.3s ease;
-	}
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 a:hover {
-	color: #0056b3;
-	}
-/* Header */
+  color: #0056b3;
+}
+
+/* Header Structure */
 header {
-	background-color: #333333;
-	color: #fff;
-	text-align: center;
-	padding: 20px 0; /* Adjusted padding to reduce the overall height */
-	margin-bottom: 40px;
+  background-color: #f4f4f4;
+  padding: 0 50px 30px;
 }
 
-header img {
-	max-width: 100%; /* Ensures the image is responsive */
-	height: auto; /* Maintains the aspect ratio */
-	max-height: 300px; /* Increased value to make the logo twice as big */
-	width: auto; /* Adjust this if you prefer a fixed width instead */
-}
-
-
-header h1 {
-	font-size: 2.8em;
-	margin-bottom: 10px;
-	}
-/* Navigation */
-nav ul {
-	display: flex;
-	justify-content: center;
-	list-style-type: none;
-	padding: 10px 0;
-	}
-nav li {
-	margin: 0 15px;
-	padding: 5px 0;
-	text-align: center;
-	}
-/* Main content layout */
-main {
-	padding: 10px 25px;
-	max-width: 800px;
-	margin: auto;
-	background-color: #fff;
-	border-radius: 5px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	margin-bottom: 30px;
-	}
-.hannah-img {
-	max-width: 100%;
-	height: auto;
-	display: block;
-	margin: 0 auto;
-	}
-/* Sections */
-section {
-	padding: 40px 0;
-	border-bottom: 1px solid #e1e1e1;
-	text-align: left;
-	}
-section h2 {
-	font-size: 2em;
-	margin-bottom: 20px;
-	text-align: center;
-	}
-.availability {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	}
-#walkthrough h2 {
-	color: darkgray;
-	}
-.services-list, .services-text {
-	list-style-type: none;
-	text-align: center;
-	}
-.contact :last-child {
-	text-align: center;
-	}
-.contact a {
-	display: inline-block;
-	padding: 3px 6px;
-	border-radius: 5px;
-	background-color: #007BFF;
-	color: #fff;
-	transition: background-color 0.3s ease;
-	}
-.contact a:hover {
-	background-color: #0056b3;
-	}
-/* Footer */
-footer {
-	text-align: center;
-	padding: 20px 0;
-	background-color: #343a40;
-	color: #fff;
-	}
-#about .about-content {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	gap: 20px;
-	align-items: center;
-	}
-  .about-text p {
-    text-indent: 20px; /* Adjust the value for more or less indentation */
-    margin-bottom: 15px; /* Add spacing between paragraphs */
-  }  
-/* Dual sections layout */
-.dual-sections {
-	display: flex;
-	justify-content: space-between;
-	gap: 20px;
-	flex-wrap: wrap;
-	}
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-#about .about-content {
-	flex-direction: column;
-	}
-.hannah-img {
-	max-width: 100%;
-	}
-main {
-	margin: 0 5%;
-	}
-	}
-/* Google Calendar Iframe */
-iframe {
-	width: 100%;
-	max-width: 800px;
-	height: 600px;
-	border: none;
-	margin: 20px auto;
-	}
-.text-center {
-	text-align: center;
-	}
-.flex-display {
-	display: flex;
-	}
-.flex-center {
-	display: flex; align-items: center; justify-content: center;
-	}
-.bg-primary {
-	background-color: #007BFF;
-	}
-.color-white {
-	color: #fff;
-	}
-.max-width-800 {
-	max-width: 800px;
-	}
-header, .bg-primary {
-	background-color: #333333;
-	}
-header, .color-white {
-	color: #fff;
-	}
-nav ul, .services-list, .services-text, .text-center {
-	text-align: center;
-	}
-nav ul, .services-list, .flex-display {
-	display: flex;
-	}
-.services-list {
-	flex-direction: column;
-	}
-main, iframe, .max-width-800 {
-	max-width: 800px;
-	}
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between; /* This will allow space for future right-side content */
-    align-items: center;
-    background-color: #f4f4f4; /* Adjust as needed */
-    padding: 20px 50px; /* Increase left and right padding for spacing */
-}
-
-header .brand-name {
-    font-family: 'Georgia', serif; /* A serif font for a more elegant look */
-    font-size: 24px; /* Adjust size as necessary */
-    color: #4a5753; /* A subtle color, similar to your example */
-    text-decoration: none; /* Remove underline from the link */
-    font-weight: bold; /* Make the text bold */
-}
-
-header .brand-name:hover {
-    color: #333; /* Darken the text on hover */
-}
-
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f4f4f4;
-    padding: 20px 50px;
-}
-
-header .brand-name {
-    font-family: 'Georgia', serif;
-    font-size: 24px;
-    color: #4a5753;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header .brand-name:hover {
-    color: #333;
-}
-
-/* Navigation Menu */
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    margin-left: 20px; /* Adds spacing between the links */
-}
-
-nav a {
-    text-decoration: none;
-    color: #4a5753;
-    font-size: 18px;
-}
-
-nav a:hover {
-    color: #333;
-}
-/* Contact Section Layout */
-.contact-wrapper {
+/* Top row: brand and nav */
+.header-top {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* Brand name styling */
+header .brand-name {
+  font-family: 'Georgia', serif;
+  font-size: 24px;
+  color: #4a5753;
+  text-decoration: none;
+  font-weight: bold;
+}
+header .brand-name:hover {
+  color: #333;
+}
+
+/* Nav styling */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  margin-left: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #4a5753;
+  font-size: 18px;
+}
+nav a:hover {
+  color: #333;
+}
+
+/* Centered logo below text */
+.header-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.header-logo {
+  max-width: 350px;
+  height: auto;
+}
+
+/* Main content layout */
+main {
+  padding: 10px 25px;
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+.hannah-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Section Styling */
+section {
+  padding: 40px 0;
+  border-bottom: 1px solid #e1e1e1;
+  text-align: left;
+}
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.availability {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#walkthrough h2 {
+  color: darkgray;
+}
+.services-list, .services-text {
+  list-style-type: none;
+  text-align: center;
+}
+.contact :last-child {
+  text-align: center;
+}
+.contact a {
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+.contact a:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #343a40;
+  color: #fff;
+}
+
+/* About Section Layout */
+#about .about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.about-text p {
+  text-indent: 20px;
+  margin-bottom: 15px;
+}
+
+/* Dual column sections */
+.dual-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Contact Layout */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
-/* Contact Info (Left Side) */
 .contact-info {
-  max-width: 50%;
-  padding-right: 20px;
+  max-width: 600px;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .contact-info h2 {
   font-size: 2.5em;
-  font-family: 'Georgia', serif; /* Change the font to your preference */
+  font-family: 'Georgia', serif;
   color: #333;
+  text-align: center;
 }
 
 .contact-info p {
@@ -275,19 +187,6 @@ nav a:hover {
   line-height: 1.5;
 }
 
-/* Contact Image (Right Side) */
-.contact-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px; /* Adds rounded corners to the image */
-}
-
-/* Contact Form (Placeholder for Future Formspree) */
-.contact-form {
-  margin-top: 30px;
-}
-
-/* General Styling for Links */
 .contact-info a {
   color: #333;
   text-decoration: none;
@@ -296,4 +195,31 @@ nav a:hover {
 
 .contact-info a:hover {
   color: #007BFF;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  #about .about-content {
+    flex-direction: column;
+  }
+  .hannah-img {
+    max-width: 100%;
+  }
+  main {
+    margin: 0 5%;
+  }
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  nav li {
+    margin-left: 0;
+  }
 }
