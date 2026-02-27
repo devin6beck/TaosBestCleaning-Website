@@ -26,6 +26,27 @@ header {
   padding: 0 50px 30px;
 }
 
+/* Header contact & CTA */
+.header-contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header-contact .phone {
+  color: #4a5753;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn-quote {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn-quote:hover { background-color: #0056b3; }
+
 /* Top row: brand and nav */
 .header-top {
   display: flex;
@@ -76,6 +97,54 @@ nav a:hover {
   max-width: 350px;
   height: auto;
 }
+
+/* Hero section styling */
+.hero {
+  padding: 40px 0 10px;
+  text-align: center;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+  border-bottom: 1px solid #e9eef2;
+}
+.hero-inner {
+  padding: 30px 20px;
+}
+.hero h1 {
+  font-size: 2.25rem;
+  margin-bottom: 10px;
+  color: #234147;
+  font-family: 'Georgia', serif;
+}
+.lead {
+  font-size: 1.05rem;
+  color: #4a5753;
+  max-width: 860px;
+  margin: 0 auto 18px;
+  line-height: 1.6;
+}
+.hero-ctas {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.btn-primary {
+  background-color: #234147;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.btn-primary:hover { opacity: 0.95; }
+.btn-secondary {
+  background-color: transparent;
+  color: #234147;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: 1px solid #cfdfe2;
+  font-weight: 600;
+}
+.btn-secondary:hover { background-color: #f4f6f7; }
 
 /* Main content layout */
 main {
