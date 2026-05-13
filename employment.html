@@ -1,46 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Employment application information for Taos Best Cleaning.">
   <title>Employment | Taos Best Cleaning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <header>
-    <div class="header-top">
-      <a href="index.html" class="brand-name">Taos Best Cleaning LLC</a>
-      <nav>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="employment.html">Employment</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header-logo-wrapper">
-      <img src="Images/TBC Logo - Sarah Version.png" alt="Taos Best Cleaning Logo" class="header-logo" />
+  <header class="site-header">
+    <div class="container header-shell">
+      <a class="brand" href="index.html" aria-label="Taos Best Cleaning home">
+        <img class="brand-mark" src="Images/tbc-luxury-logo.svg" alt="Taos Best Cleaning logo">
+        <span class="brand-copy">
+          <span class="brand-name">Taos Best Cleaning</span>
+          <span class="brand-tag">Private residential care in Taos</span>
+        </span>
+      </a>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="services.html">Services</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-cta-group">
+          <a class="header-phone" href="tel:5756132296">575-613-2296</a>
+          <a class="button button-primary" href="contact.html">Schedule a private walkthrough</a>
+        </div>
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="main-section">
-      <h2 class="text-center">Employment Application</h2>
-      <p class="text-center">Use the form below to apply for a job with Taos Best Cleaning LLC.</p>
-      <div class="flex-center">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdDf8WM-CRGIp2cBGFs10ZhxlL77kdDzGf-B0UxZbx-hVqHLQ/viewform?embedded=true"
-          width="100%" height="1600" frameborder="0" marginheight="0" marginwidth="0">
-          Loading…
-        </iframe>
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">Employment</p>
+        <h1>Join a small professional team serving Taos homes with care and consistency.</h1>
+        <p class="page-intro">
+          This page is for applicants interested in dependable work, respectful service standards, and client homes that require attention to detail.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="split-callout">
+          <div>
+            <p class="service-label">Application</p>
+            <h2>Complete the employment form below.</h2>
+          </div>
+          <div>
+            <p>We are looking for team members who are reliable, professional, and comfortable working in well-maintained private homes.</p>
+            <p>Please use the embedded form to share your experience and availability.</p>
+          </div>
+        </div>
+        <div class="embed-frame embed-frame-tall">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdDf8WM-CRGIp2cBGFs10ZhxlL77kdDzGf-B0UxZbx-hVqHLQ/viewform?embedded=true" title="Taos Best Cleaning employment application" loading="lazy">Loading...</iframe>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 Taos Best Cleaning</p>
+  <footer class="site-footer">
+    <div class="container footer-shell">
+      <div>
+        <p class="footer-title">Taos Best Cleaning</p>
+        <p class="footer-copy">Recurring cleaning and home care for Taos residences, vacation homes, and second homes.</p>
+      </div>
+      <div class="footer-links">
+        <a href="tel:5756132296">575-613-2296</a>
+        <a href="mailto:info@TaosBestCleaning.com">info@TaosBestCleaning.com</a>
+        <a href="employment.html">Employment</a>
+        <a href="availability.html">Availability</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Taos Best Cleaning</p>
+    </div>
   </footer>
-
 </body>
 </html>
+

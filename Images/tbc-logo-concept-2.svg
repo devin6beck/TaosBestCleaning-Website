@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">Taos Best Cleaning logo concept 2</title>
+  <desc id="desc">A serif TBC monogram with angular Taos mountain linework and teal divider accents.</desc>
+  <defs>
+    <style>
+      .ink { fill: #14283d; }
+      .ink-stroke { stroke: #14283d; }
+      .teal { fill: #48bec3; }
+      .teal-stroke { stroke: #48bec3; }
+      .label { fill: #536168; font-family: Manrope, Segoe UI, Arial, sans-serif; font-size: 17px; font-weight: 700; letter-spacing: 3px; }
+      .serif { fill: #14283d; font-family: Georgia, Times New Roman, serif; font-weight: 400; }
+      .word { fill: #14283d; font-family: Georgia, Times New Roman, serif; font-size: 40px; font-weight: 400; letter-spacing: 12px; }
+    </style>
+  </defs>
+
+  <g transform="translate(94 54)">
+    <text class="label" x="0" y="0">COMPACT MONOGRAM</text>
+    <g transform="translate(26 48)">
+      <path class="ink" d="M10 86 L100 78 L170 22 L238 90 L238 103 L169 48 L112 98 L82 85 Z"/>
+      <path class="ink" d="M170 22 L213 64 L252 57 L335 100 L262 100 L225 73 L214 83 Z"/>
+      <text class="serif" x="174" y="322" text-anchor="middle" font-size="232">TBC</text>
+      <path class="teal-stroke" d="M98 370 H250" fill="none" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g transform="translate(478 54)">
+    <text class="label" x="0" y="0">FULL NAME LOCKUP</text>
+    <g transform="translate(0 52)">
+      <path class="ink" d="M22 78 L142 68 L236 0 L318 82 L318 96 L237 27 L162 94 L118 78 Z"/>
+      <path class="ink" d="M236 0 L286 48 L340 38 L462 94 L358 94 L309 62 L295 74 Z"/>
+      <text class="serif" x="242" y="304" text-anchor="middle" font-size="220">TBC</text>
+      <text class="word" x="242" y="420" text-anchor="middle">TAOS BEST CLEANING</text>
+      <path class="teal-stroke" d="M88 470 H214 M270 470 H396" fill="none" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g transform="translate(96 500)">
+    <text class="label" x="0" y="0">ONE-COLOR READ</text>
+    <g transform="translate(18 24)">
+      <path class="ink" d="M0 35 L50 31 L88 0 L126 35 L126 43 L88 14 L57 43 L38 36 Z"/>
+      <text class="ink" x="65" y="105" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="58">TBC</text>
+    </g>
+  </g>
+</svg>

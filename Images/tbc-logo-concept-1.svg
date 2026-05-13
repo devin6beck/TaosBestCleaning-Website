@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">Taos Best Cleaning logo concept 1</title>
+  <desc id="desc">A refined Taos Best Cleaning logo with mountain linework, an arched accent, compact mark, and full-name lockup.</desc>
+  <defs>
+    <style>
+      .ink { fill: #26343a; }
+      .ink-stroke { stroke: #26343a; }
+      .teal { fill: #48bec3; }
+      .teal-stroke { stroke: #48bec3; }
+      .muted { fill: #536168; }
+      .label { fill: #536168; font-family: Manrope, Segoe UI, Arial, sans-serif; font-size: 17px; font-weight: 700; letter-spacing: 3px; }
+      .serif { fill: #26343a; font-family: Georgia, Times New Roman, serif; font-weight: 400; }
+      .small { fill: #48bec3; font-family: Manrope, Segoe UI, Arial, sans-serif; font-size: 28px; font-weight: 600; letter-spacing: 13px; }
+      .mono { fill: #26343a; font-family: Georgia, Times New Roman, serif; font-size: 132px; font-weight: 400; letter-spacing: 18px; }
+    </style>
+  </defs>
+
+  <g transform="translate(86 58)">
+    <text class="label" x="0" y="0">COMPACT MARK</text>
+    <g transform="translate(12 52)">
+      <path class="teal-stroke" d="M84 104 C103 26 249 26 268 104" fill="none" stroke-width="7" stroke-linecap="round"/>
+      <path class="ink-stroke" d="M24 184 L128 86 L164 122 L230 58 L330 184" fill="none" stroke-width="14" stroke-linecap="square" stroke-linejoin="miter"/>
+      <path class="ink-stroke" d="M124 184 L182 126 L230 184" fill="none" stroke-width="10" stroke-linecap="square" stroke-linejoin="miter"/>
+      <g class="ink" transform="translate(161 172)">
+        <rect x="0" y="0" width="15" height="15"/>
+        <rect x="23" y="0" width="15" height="15"/>
+        <rect x="0" y="23" width="15" height="15"/>
+        <rect x="23" y="23" width="15" height="15"/>
+      </g>
+      <text class="serif" x="177" y="318" text-anchor="middle" font-size="116" letter-spacing="14">TBC</text>
+      <path class="teal-stroke" d="M84 350 H270" fill="none" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g transform="translate(468 64)">
+    <text class="label" x="0" y="0">FULL NAME LOCKUP</text>
+    <g transform="translate(0 58)">
+      <path class="teal-stroke" d="M136 84 C160 2 406 2 430 84" fill="none" stroke-width="7" stroke-linecap="round"/>
+      <path class="ink-stroke" d="M82 172 L226 52 L276 102 L358 22 L502 172" fill="none" stroke-width="13" stroke-linecap="square" stroke-linejoin="miter"/>
+      <path class="ink-stroke" d="M226 172 L306 94 L374 172" fill="none" stroke-width="9" stroke-linecap="square" stroke-linejoin="miter"/>
+      <g class="ink" transform="translate(276 154)">
+        <rect x="0" y="0" width="14" height="14"/>
+        <rect x="22" y="0" width="14" height="14"/>
+        <rect x="0" y="22" width="14" height="14"/>
+        <rect x="22" y="22" width="14" height="14"/>
+      </g>
+      <text class="serif" x="292" y="322" text-anchor="middle" font-size="88" letter-spacing="18">TAOS BEST</text>
+      <text class="small" x="292" y="408" text-anchor="middle">CLEANING</text>
+      <path class="teal-stroke" d="M186 436 H398" fill="none" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g transform="translate(94 498)">
+    <text class="label" x="0" y="0">ONE-COLOR READ</text>
+    <g transform="translate(12 28)">
+      <path class="ink-stroke" d="M7 56 L55 12 L74 31 L110 0 L160 56" fill="none" stroke-width="7" stroke-linejoin="miter"/>
+      <text class="ink" x="84" y="94" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="40" letter-spacing="5">TBC</text>
+    </g>
+  </g>
+</svg>

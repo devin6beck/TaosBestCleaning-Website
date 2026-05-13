@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">Taos Best Cleaning logo concept 3</title>
+  <desc id="desc">A horizontal Taos Best Cleaning wordmark with flowing mountain lines and a compact icon.</desc>
+  <defs>
+    <style>
+      .ink { fill: #26343a; }
+      .ink-stroke { stroke: #26343a; }
+      .teal-stroke { stroke: #48bec3; }
+      .label { fill: #536168; font-family: Manrope, Segoe UI, Arial, sans-serif; font-size: 17px; font-weight: 700; letter-spacing: 3px; }
+      .name { fill: #26343a; font-family: Georgia, Times New Roman, serif; font-size: 88px; font-weight: 400; letter-spacing: 4px; }
+      .small-name { fill: #26343a; font-family: Georgia, Times New Roman, serif; font-size: 70px; font-weight: 400; letter-spacing: 2px; }
+    </style>
+  </defs>
+
+  <g transform="translate(86 64)">
+    <text class="label" x="0" y="0">COMPACT MARK</text>
+    <g transform="translate(0 58)">
+      <path class="ink-stroke" d="M6 118 C66 116 104 96 148 40 C160 25 173 25 185 42 L212 78" fill="none" stroke-width="11" stroke-linecap="round"/>
+      <path class="ink-stroke" d="M166 82 L236 8 C249 -5 262 -3 276 12 L352 98 C386 132 420 150 470 150" fill="none" stroke-width="11" stroke-linecap="round"/>
+      <text class="ink" x="238" y="236" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="82" letter-spacing="7">TBC</text>
+      <path class="teal-stroke" d="M136 270 H340" fill="none" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g transform="translate(594 64)">
+    <text class="label" x="0" y="0">FULL NAME HORIZONTAL LOCKUP</text>
+    <g transform="translate(-60 76)">
+      <path class="ink-stroke" d="M30 72 C92 70 130 45 176 9 C188 0 200 2 211 16 L238 52" fill="none" stroke-width="10" stroke-linecap="round"/>
+      <path class="ink-stroke" d="M204 54 L294 -28 C307 -40 322 -38 336 -24 L446 66 C490 100 538 111 612 111" fill="none" stroke-width="10" stroke-linecap="round"/>
+      <text class="name" x="320" y="254" text-anchor="middle">Taos Best</text>
+      <text class="name" x="320" y="348" text-anchor="middle">Cleaning</text>
+      <path class="teal-stroke" d="M218 402 H422" fill="none" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g transform="translate(92 506)">
+    <text class="label" x="0" y="0">ONE-COLOR READ</text>
+    <g transform="translate(10 26)">
+      <path class="ink-stroke" d="M0 52 C33 52 55 39 81 9 C88 1 96 1 104 10 L124 32 M104 34 L148 0 C157 -7 166 -5 174 4 L224 48 C248 67 272 72 304 72" fill="none" stroke-width="6" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

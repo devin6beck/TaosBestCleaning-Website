@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 132" role="img" aria-labelledby="logo-title logo-desc">
+  <title id="logo-title">Taos Best Cleaning logo</title>
+  <desc id="logo-desc">A clean TBC monogram with subtle Taos mountain lines and a refined gold accent.</desc>
+  <defs>
+    <linearGradient id="gold-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#caaa73"/>
+      <stop offset="100%" stop-color="#8e6c3b"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path d="M42 48L82 24l27 22 18-15 31 25 45-31 38 25 28-18 49 30" stroke="#1f3a31" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <path d="M77 101h206" stroke="url(#gold-accent)" stroke-linecap="round" stroke-width="3"/>
+    <text x="180" y="86" fill="#1d211d" font-family="'Manrope', 'Segoe UI', Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="9" text-anchor="middle">TBC</text>
+    <text x="180" y="122" fill="#59675a" font-family="'Manrope', 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="4" text-anchor="middle">TAOS BEST CLEANING</text>
+  </g>
+</svg>

@@ -1,57 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Taos Best Cleaning, a locally owned and operated company serving Taos homes, vacation properties, and second residences.">
   <title>About | Taos Best Cleaning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="header-top">
-      <a href="index.html" class="brand-name">Taos Best Cleaning LLC</a>
-      <nav>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="employment.html">Employment</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header-logo-wrapper">
-      <img src="Images/TBC Logo - Sarah Version.png" alt="Taos Best Cleaning Logo" class="header-logo" />
+  <header class="site-header">
+    <div class="container header-shell">
+      <a class="brand" href="index.html" aria-label="Taos Best Cleaning home">
+        <img class="brand-mark" src="Images/tbc-luxury-logo.svg" alt="Taos Best Cleaning logo">
+        <span class="brand-copy">
+          <span class="brand-name">Taos Best Cleaning</span>
+          <span class="brand-tag">Private residential care in Taos</span>
+        </span>
+      </a>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html" aria-current="page">About</a></li>
+            <li><a class="nav-link" href="services.html">Services</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-cta-group">
+          <a class="header-phone" href="tel:5756132296">575-613-2296</a>
+          <a class="button button-primary" href="contact.html">Schedule a private walkthrough</a>
+        </div>
+      </div>
     </div>
   </header>
 
   <main>
-    <section id="about" class="main-section">
-      <h2>Hi, I'm Hannah</h2>
-      <div class="about-content">
-        <img alt="Image of Hannah and her dog Darlin'" class="hannah-img" src="Images/picHannahDarlinTsv.png" />
-        <div class="about-text">
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">About</p>
+        <h1>Local stewardship, dependable standards, and care designed for recurring service.</h1>
+        <p class="page-intro">
+          Taos Best Cleaning serves homeowners who want a consistent local team, professional communication, and respectful attention to the details that matter in well-kept homes.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-layout">
+        <div class="portrait-frame">
+          <img class="portrait-image" src="Images/picHannahDarlinTsv.png" alt="Hannah Beck walking with her dog in Taos">
+        </div>
+        <div class="stacked-copy">
+          <h2>Hannah Beck built the company around trust and consistency.</h2>
           <p>
-            I’m Hannah Beck, and I’ve proudly called Taos home for over eight years. What started as a one-woman operation has grown into Taos Best Cleaning LLC, a small team of reliable cleaners who share my commitment to thorough, consistent service.
+            Hannah has called Taos home for years. What began as a one-person operation has grown into a small, trained team that supports recurring home care for full-time residences, vacation homes, and second homes throughout the area.
           </p>
-    
-          <!-- Adding more personal details and values -->
           <p>
-            We’re a locally owned and operated business, and every team member is background-checked and trained by me to meet the same high standards. As a company, we are fully insured and bonded, so you can feel confident knowing your home is protected.
-            We focus on maintaining homes with recurring cleanings, starting with a detailed first clean and continuing with regular upkeep that keeps your space feeling fresh, comfortable, and welcoming.
+            Taos Best Cleaning is locally owned and operated, insured and bonded, and structured for clients who value privacy, dependability, and thoughtful property care. Team members are background-checked and trained to consistent service standards before entering client homes.
           </p>
-    
-          <!-- Call to action -->
           <p>
-            If you’re looking for a small, trustworthy team you can rely on, I’d love to chat. Schedule a free consultation today, and let’s find the right plan for your home.
+            The company focuses on detailed first cleans, recurring maintenance, and monthly home check-ins that help owners stay confident in the condition of their property whether they are in Taos or away.
           </p>
-    
         </div>
       </div>
     </section>
 
+    <section class="section section-tinted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">What guides the work</p>
+          <h2>Professional standards without unnecessary noise.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-block">
+            <h3>Discretion</h3>
+            <p>Clients trust us with private homes, seasonal properties, and the routines that keep them ready.</p>
+          </article>
+          <article class="feature-block">
+            <h3>Training</h3>
+            <p>Every team member is prepared to follow the same service standards and respect the property.</p>
+          </article>
+          <article class="feature-block">
+            <h3>Recurring care</h3>
+            <p>The goal is not a one-time impression. It is a home that stays well maintained over time.</p>
+          </article>
+          <article class="feature-block">
+            <h3>Local accountability</h3>
+            <p>Because the company is based in Taos, communication stays direct and responsibility stays close to home.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cta">
+      <div class="container cta-band">
+        <div>
+          <p class="eyebrow">Consultation</p>
+          <h2>Tell us about the property and the routine you need.</h2>
+          <p>We can discuss recurring service, second-home care, check-ins, and the best starting point for your home.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="button button-primary" href="contact.html">Start the conversation</a>
+          <a class="button button-secondary" href="services.html">Review services</a>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer>
-    <p>© 2025 Taos Best Cleaning</p>
+
+  <footer class="site-footer">
+    <div class="container footer-shell">
+      <div>
+        <p class="footer-title">Taos Best Cleaning</p>
+        <p class="footer-copy">Recurring cleaning and home care for Taos residences, vacation homes, and second homes.</p>
+      </div>
+      <div class="footer-links">
+        <a href="tel:5756132296">575-613-2296</a>
+        <a href="mailto:info@TaosBestCleaning.com">info@TaosBestCleaning.com</a>
+        <a href="employment.html">Employment</a>
+        <a href="availability.html">Availability</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Taos Best Cleaning</p>
+    </div>
   </footer>
 </body>
 </html>
+

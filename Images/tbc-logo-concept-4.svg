@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">Taos Best Cleaning logo concept 4</title>
+  <desc id="desc">A circular badge logo for Taos Best Cleaning with mountain linework, TBC monogram, and curved full-name text.</desc>
+  <defs>
+    <style>
+      .ink { fill: #26343a; }
+      .ink-stroke { stroke: #26343a; }
+      .teal { fill: #48bec3; }
+      .teal-stroke { stroke: #48bec3; }
+      .label { fill: #536168; font-family: Manrope, Segoe UI, Arial, sans-serif; font-size: 17px; font-weight: 700; letter-spacing: 3px; }
+      .serif { fill: #26343a; font-family: Georgia, Times New Roman, serif; font-weight: 400; }
+      .ring { fill: none; stroke: #26343a; stroke-width: 7; }
+      .badge-text { fill: #26343a; font-family: Manrope, Segoe UI, Arial, sans-serif; font-size: 24px; font-weight: 700; letter-spacing: 4px; }
+    </style>
+    <path id="name-arc" d="M 152 414 A 190 190 0 0 0 488 414"/>
+  </defs>
+
+  <g transform="translate(76 54)">
+    <text class="label" x="0" y="0">COMPACT BADGE</text>
+    <g transform="translate(14 44)">
+      <path class="ring" d="M44 292 A180 180 0 1 1 404 292"/>
+      <path class="ring" d="M44 292 A180 180 0 0 0 66 378"/>
+      <path class="ring" d="M382 378 A180 180 0 0 0 404 292"/>
+      <path class="ink-stroke" d="M96 212 C152 196 188 168 232 116 C243 103 256 103 268 118 L306 162 C337 197 370 214 414 218" fill="none" stroke-width="10" stroke-linecap="round"/>
+      <path class="ink-stroke" d="M170 215 C207 197 244 192 286 202" fill="none" stroke-width="5" stroke-linecap="round"/>
+      <g class="teal" transform="translate(212 238)">
+        <rect x="0" y="0" width="18" height="18"/>
+        <rect x="27" y="0" width="18" height="18"/>
+        <rect x="0" y="27" width="18" height="18"/>
+        <rect x="27" y="27" width="18" height="18"/>
+      </g>
+      <text class="serif" x="228" y="376" text-anchor="middle" font-size="126" letter-spacing="14">TBC</text>
+      <path class="teal-stroke" d="M162 420 C204 414 252 414 294 420" fill="none" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g transform="translate(568 54)">
+    <text class="label" x="0" y="0">FULL NAME BADGE</text>
+    <g transform="translate(0 44)">
+      <path class="ring" d="M88 292 A232 232 0 1 1 552 292"/>
+      <path class="ring" d="M88 292 A232 232 0 0 0 118 412"/>
+      <path class="ring" d="M522 412 A232 232 0 0 0 552 292"/>
+      <path class="ink-stroke" d="M136 214 C203 192 245 160 299 100 C311 86 326 86 340 102 L390 160 C428 201 469 220 520 224" fill="none" stroke-width="10" stroke-linecap="round"/>
+      <path class="ink-stroke" d="M224 220 C269 200 316 196 366 209" fill="none" stroke-width="5" stroke-linecap="round"/>
+      <g class="teal" transform="translate(298 246)">
+        <rect x="0" y="0" width="17" height="17"/>
+        <rect x="26" y="0" width="17" height="17"/>
+        <rect x="0" y="26" width="17" height="17"/>
+        <rect x="26" y="26" width="17" height="17"/>
+      </g>
+      <text class="serif" x="322" y="386" text-anchor="middle" font-size="138" letter-spacing="18">TBC</text>
+      <path class="teal-stroke" d="M228 430 C286 424 358 424 416 430" fill="none" stroke-width="5" stroke-linecap="round"/>
+      <text class="badge-text">
+        <textPath href="#name-arc" startOffset="50%" text-anchor="middle">TAOS BEST CLEANING</textPath>
+      </text>
+    </g>
+  </g>
+
+  <g transform="translate(96 108)">
+    <text class="label" x="0" y="0">ONE-COLOR READ</text>
+    <g transform="translate(18 20) scale(0.66)">
+      <path class="ink-stroke" d="M12 66 A58 58 0 0 1 128 66" fill="none" stroke-width="5" stroke-linecap="round"/>
+      <path class="ink-stroke" d="M26 68 C47 61 63 48 82 26 C88 19 94 19 100 27 L126 58" fill="none" stroke-width="5" stroke-linecap="round"/>
+      <text class="ink" x="72" y="110" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="42" letter-spacing="4">TBC</text>
+    </g>
+  </g>
+</svg>
