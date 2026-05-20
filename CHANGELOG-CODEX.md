@@ -98,3 +98,33 @@ Recovery notes:
 - To view the old live-site style, use GitHub branch `main`.
 - The old OneDrive folder was not deleted and can still be used as a recovery reference.
 
+## 2026-05-20 - GitHub CLI helper setup
+
+Purpose:
+- Install and verify the GitHub CLI helper tool, also called `gh`, so future Codex sessions can check GitHub login, branches, pull requests, and other GitHub details from this project folder.
+
+Commands run:
+- `Get-Command gh -ErrorAction SilentlyContinue | Select-Object Source,Version`
+- `winget --version`
+- `git status --short --branch --untracked-files=all`
+- `git branch --show-current`
+- `winget install --id GitHub.cli -e --source winget --accept-package-agreements --accept-source-agreements`
+- `Test-Path -LiteralPath 'C:\Program Files\GitHub CLI\gh.exe'`
+- `Test-Path -LiteralPath "$env:LOCALAPPDATA\Programs\GitHub CLI\gh.exe"`
+- `Get-ChildItem -Path 'C:\Program Files','C:\Users\edwar\AppData\Local\Programs' -Recurse -Filter gh.exe -ErrorAction SilentlyContinue | Select-Object -First 5 FullName`
+- `& 'C:\Program Files\GitHub CLI\gh.exe' --version`
+- `& 'C:\Program Files\GitHub CLI\gh.exe' auth status`
+- `& 'C:\Program Files\GitHub CLI\gh.exe' repo view devin6beck/TaosBestCleaning-Website --json nameWithOwner,defaultBranchRef`
+
+Results:
+- GitHub CLI was installed successfully.
+- Installed version verified: `gh version 2.92.0 (2026-04-28)`.
+- Installed location verified: `C:\Program Files\GitHub CLI\gh.exe`.
+- The current shell did not immediately recognize plain `gh`, likely because Windows had not refreshed the shell path yet.
+- Directly running `C:\Program Files\GitHub CLI\gh.exe` worked.
+- `gh auth status` reported that no GitHub account is logged in yet.
+
+Items to review:
+- A future Codex or PowerShell session may recognize plain `gh` after reopening the terminal/app.
+- GitHub login still needs to be completed by the user through GitHub's normal browser approval flow.
+
