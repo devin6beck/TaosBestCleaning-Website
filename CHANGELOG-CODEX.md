@@ -53,3 +53,48 @@ Commands run for inspection and setup:
 Items to review:
 - `gh` was not installed or not available in this shell. This is not required for this branch push because Git can push directly to the configured GitHub remote.
 
+Results:
+- The quiet-estate work was committed in the old OneDrive folder as `bb00de52e3e2e014a9e51b2c532d251c7e41a9fb`.
+- The branch `codex/quiet-estate-care-draft` was pushed to GitHub.
+- GitHub verification showed:
+  - `codex/quiet-estate-care-draft` at `bb00de52e3e2e014a9e51b2c532d251c7e41a9fb`
+  - `codex/luxury-redesign-implementation` still at `1c0cfcadd289b93080b776b9a17001d31e442a04`
+  - `main` still at `4a45d2e9fe435055033f088264dd1a1dba147a3d`
+  - `gh-pages` still at `4a45d2e9fe435055033f088264dd1a1dba147a3d`
+- The new local project folder was created by cloning from GitHub into `C:\Users\edwar\Files\AI\Business Projects\TBC Website`.
+- The new local project is using branch `codex/quiet-estate-care-draft`.
+- Expected files were verified in the new local project:
+  - `CHANGELOG-CODEX.md`
+  - `Images/Logo Idea 1.png`
+  - `Images/tbc-quiet-estate-hero.png`
+  - `Images/tbc-quiet-estate-logo.svg`
+  - `about.html`
+  - `availability.html`
+  - `contact.html`
+  - `employment.html`
+  - `index.html`
+  - `services.html`
+  - `styles.css`
+
+Additional commands run:
+- `git add -- about.html availability.html contact.html employment.html index.html services.html styles.css CHANGELOG-CODEX.md "Images/Logo Idea 1.png" Images/tbc-quiet-estate-hero.png Images/tbc-quiet-estate-logo.svg`
+- `git diff --cached --name-status`
+- `git diff --cached --stat`
+- `git -c user.name="Devin Beck" -c user.email="devin6beck@gmail.com" commit -m "Add quiet estate care draft"`
+- `git push -u origin codex/quiet-estate-care-draft`
+- `git clone --branch codex/quiet-estate-care-draft --single-branch https://github.com/devin6beck/TaosBestCleaning-Website.git "C:\Users\edwar\Files\AI\Business Projects\TBC Website"`
+- `git status --short --branch --untracked-files=all`
+- `git rev-parse HEAD`
+- `git branch --show-current`
+- `git remote -v`
+- `git log --oneline --decorate -3`
+- `git ls-files about.html availability.html contact.html employment.html index.html services.html styles.css CHANGELOG-CODEX.md "Images/Logo Idea 1.png" Images/tbc-quiet-estate-hero.png Images/tbc-quiet-estate-logo.svg`
+
+Archived items:
+- None.
+
+Recovery notes:
+- To keep using the newer quiet-estate site work, use `C:\Users\edwar\Files\AI\Business Projects\TBC Website` on branch `codex/quiet-estate-care-draft`.
+- To view the old live-site style, use GitHub branch `main`.
+- The old OneDrive folder was not deleted and can still be used as a recovery reference.
+
