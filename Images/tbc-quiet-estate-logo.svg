@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 154" role="img" aria-labelledby="logo-title logo-desc">
+  <title id="logo-title">Taos Best Cleaning logo</title>
+  <desc id="logo-desc">A refined TBC monogram with a simple Taos mountain line and the words Taos Best Cleaning.</desc>
+  <g fill="none" fill-rule="evenodd">
+    <path d="M60 54 112 30l32 22 22-17 44 31 44-29 48 25" stroke="#202321" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="180" y="104" fill="#202321" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="400" letter-spacing="8" text-anchor="middle">TBC</text>
+    <path d="M103 122h154" stroke="#202321" stroke-width="1.6" stroke-linecap="round" opacity="0.42"/>
+    <text x="180" y="145" fill="#202321" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="400" letter-spacing="6" text-anchor="middle">TAOS BEST CLEANING</text>
+  </g>
+</svg>
