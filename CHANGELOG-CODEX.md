@@ -251,3 +251,27 @@ Commands and checks run:
 How to reverse:
 - Use Git to revert the commit that records this branch merge work, or restore `index.html` from the previous commit if you only want that small homepage text back.
 
+## 2026-05-21 - Merge homepage updates into quiet estate draft
+
+Purpose:
+- Merge `codex/homepage-header-updates` into `codex/quiet-estate-care-draft` while leaving `main` alone.
+
+Branch:
+- Switched from `codex/homepage-header-updates` to `codex/quiet-estate-care-draft`.
+- Merged `codex/homepage-header-updates` into `codex/quiet-estate-care-draft`.
+
+Commands and checks run:
+- `git status --short --branch`
+- `git switch codex/quiet-estate-care-draft`
+- `git merge codex/homepage-header-updates`
+
+Results:
+- The merge completed as a fast-forward from `46c3dc1` to `46d2049`.
+- `main` was not checked out, merged into, or pushed.
+
+Archived items:
+- None during the merge step.
+
+How to reverse:
+- Revert the merge result on `codex/quiet-estate-care-draft` with Git, or switch back to `codex/homepage-header-updates` if you want to inspect the source branch separately.
+
