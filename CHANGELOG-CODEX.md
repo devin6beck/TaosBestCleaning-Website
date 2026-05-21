@@ -243,6 +243,10 @@ Commands and checks run:
 - `git diff --check`
 - `Get-ChildItem -Recurse -File -Force '_ARCHIVE_DO_NOT_DELETE'`
 - Project path check confirming this folder is on local `C:` and not inside OneDrive, Dropbox, iCloud, or Google Drive.
+- `git add CHANGELOG-CODEX.md about.html availability.html contact.html employment.html index.html services.html styles.css _ARCHIVE_DO_NOT_DELETE`
+- `git commit -m "Apply homepage header updates"` failed because this local copy did not have a Git commit name/email configured.
+- `git log -1 --format="%an <%ae>"` was used to read the existing repo author.
+- `git -c user.name="Devin Beck" -c user.email="devin6beck@gmail.com" commit -m "Apply homepage header updates"` saved the branch without changing global Git settings.
 
 How to reverse:
 - Use Git to revert the commit that records this branch merge work, or restore `index.html` from the previous commit if you only want that small homepage text back.
