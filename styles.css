@@ -70,6 +70,11 @@ h1 {
   line-height: 0.95;
 }
 
+.hero h1 {
+  font-size: clamp(2.75rem, 5vw, 4.85rem);
+  line-height: 1.06;
+}
+
 h2 {
   font-size: clamp(2.1rem, 3.4vw, 3.35rem);
   line-height: 1.02;
@@ -114,13 +119,15 @@ h3 {
 }
 
 .brand-mark {
-  width: 112px;
-  height: auto;
+  width: 230px;
+  height: 78px;
   flex-shrink: 0;
+  object-fit: cover;
+  object-position: center 55%;
 }
 
 .brand-copy {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 0.1rem;
 }
@@ -333,7 +340,7 @@ h3 {
   right: 1rem;
   bottom: 1rem;
   padding: 1.25rem;
-  background: rgba(251, 248, 242, 0.9);
+  background: rgba(251, 248, 242, 0.78);
   backdrop-filter: blur(14px);
 }
 
@@ -659,7 +666,8 @@ h3 {
   }
 
   .brand-mark {
-    width: 94px;
+    width: 190px;
+    height: 66px;
   }
 
   .brand-name {

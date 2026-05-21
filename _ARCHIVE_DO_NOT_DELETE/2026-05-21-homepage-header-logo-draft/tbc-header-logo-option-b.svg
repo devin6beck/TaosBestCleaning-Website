@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 168" role="img" aria-labelledby="logo-title logo-desc">
+  <title id="logo-title">Taos Best Cleaning logo</title>
+  <desc id="logo-desc">Mountain line art above the Taos Best Cleaning business name.</desc>
+  <g fill="none" fill-rule="evenodd">
+    <path d="M38 64c42-2 74-17 112-54 10-10 21-9 30 2l28 34" stroke="#26343a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M198 48 288 7c13-6 27-3 37 8l86 76c22 19 45 29 71 30" stroke="#26343a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M171 88c41-13 82-14 126-1" stroke="#48bec3" stroke-width="5" stroke-linecap="round"/>
+    <text x="260" y="126" fill="#26343a" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="400" letter-spacing="2" text-anchor="middle">Taos Best Cleaning</text>
+    <path d="M163 148h194" stroke="#48bec3" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
