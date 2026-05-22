@@ -275,3 +275,38 @@ Archived items:
 How to reverse:
 - Revert the merge result on `codex/quiet-estate-care-draft` with Git, or switch back to `codex/homepage-header-updates` if you want to inspect the source branch separately.
 
+## 2026-05-21 - Clean inner page hero headlines
+
+Purpose:
+- Create a separate branch for making the About, Services, and Contact page hero headlines appear clean, solid, and easier to read.
+
+Branch:
+- Created and switched to `codex/clean-hero-headlines` from `codex/quiet-estate-care-draft`.
+
+Files changed:
+- `index.html`
+- `styles.css`
+- `CHANGELOG-CODEX.md`
+
+Changes made:
+- Removed the shared light gradient layer from `.page-hero` while keeping the homepage `.hero` gradient unchanged.
+- Removed `Taos` from the homepage hero headline so it now starts `Your home`.
+
+Archived items:
+- None.
+
+Commands and checks run:
+- `git status --short --branch`
+- `git switch -c codex/clean-hero-headlines`
+- Text searches for hero, overlay, headline, opacity, and page-heading references.
+- `Get-Date -Format 'yyyy-MM-dd HH:mm:ss zzz'`
+- `git diff -- styles.css CHANGELOG-CODEX.md`
+- `git diff --check`
+- `Select-String` checks confirming the target pages still use `.page-hero` and have their hero headings.
+- `Select-String` checks confirming the light gradient remains on `.hero::before` only, not `.page-hero::before`.
+- `Select-String` checks for remaining `Taos` text on the homepage.
+- Attempted an automated browser check with Node, but the local browser package was not available in this session.
+
+How to reverse:
+- Switch back to `codex/quiet-estate-care-draft` and leave `codex/clean-hero-headlines` alone, or restore `styles.css` and `index.html` from Git if you only want to undo these text and headline-effect changes.
+

@@ -237,8 +237,7 @@ h3 {
   overflow: hidden;
 }
 
-.hero::before,
-.page-hero::before {
+.hero::before {
   content: "";
   position: absolute;
   inset: 0;
