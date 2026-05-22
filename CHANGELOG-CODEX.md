@@ -611,3 +611,27 @@ Commands and checks run:
 How to reverse:
 - Revert commit `037d2d7` on `main` and on `codex/quiet-estate-care-draft` if you want to return to the previous logo and branch state.
 
+## 2026-05-21 - Publish site to gh-pages
+
+Purpose:
+- Move the current approved site from `codex/quiet-estate-care-draft` to `gh-pages` so the new updates go live.
+
+Branch:
+- Started on `codex/quiet-estate-care-draft`.
+- Confirmed GitHub `main` and `codex/quiet-estate-care-draft` were both at `13113d33b418b54cb5ea12d8ace09cfaf54fafdc`.
+- Confirmed GitHub `gh-pages` was still at the older commit `4a45d2e9fe435055033f088264dd1a1dba147a3d` before publishing.
+
+Changes made:
+- Added this changelog entry before publishing the live branch.
+
+Archived items:
+- None.
+
+Commands and checks run:
+- `git status --short --branch --untracked-files=all`
+- `git ls-remote --heads origin main gh-pages codex/quiet-estate-care-draft`
+- `git diff --check`
+
+How to reverse:
+- Move `gh-pages` back to the previous commit only if explicitly approved, or publish a new follow-up commit that restores the older site content.
+
