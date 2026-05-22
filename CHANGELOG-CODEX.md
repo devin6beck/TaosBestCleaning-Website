@@ -578,3 +578,36 @@ Commands and checks run:
 How to reverse:
 - Revert the logo update commit on `codex/quiet-estate-care-draft`, or restore the HTML pages and new logo files from Git history.
 
+## 2026-05-21 - Publish logo update to main
+
+Purpose:
+- Push the logo update on `codex/quiet-estate-care-draft` and merge it into `main` safely.
+
+Branch:
+- Started on `codex/quiet-estate-care-draft`.
+- Pushed `codex/quiet-estate-care-draft` to GitHub.
+- Updated `main` by a non-force fast-forward push from `codex/quiet-estate-care-draft`.
+
+Results:
+- Logo update commit published: `037d2d7`.
+- GitHub `main` moved from `4a45d2e9fe435055033f088264dd1a1dba147a3d` to `037d2d7a1c89dc0a02f66594983c7a29efe59e40`.
+- GitHub `gh-pages` was visible and stayed at `4a45d2e9fe435055033f088264dd1a1dba147a3d`.
+- No force push was used.
+
+Archived items:
+- None.
+
+Commands and checks run:
+- `git add -- CHANGELOG-CODEX.md about.html availability.html contact.html employment.html index.html services.html "Images/Logo 1 PNG.png" "Images/Logo 1 SVG.svg"`
+- `git diff --cached --name-status`
+- `git diff --cached --stat`
+- `git -c user.name="Devin Beck" -c user.email="devin6beck@gmail.com" commit -m "Update site logo asset"`
+- `git push origin codex/quiet-estate-care-draft`
+- `git fetch origin main:refs/remotes/origin/main gh-pages:refs/remotes/origin/gh-pages`
+- `git merge-base --is-ancestor origin/main codex/quiet-estate-care-draft`
+- `git push origin codex/quiet-estate-care-draft:main`
+- `git ls-remote --heads origin main gh-pages codex/quiet-estate-care-draft`
+
+How to reverse:
+- Revert commit `037d2d7` on `main` and on `codex/quiet-estate-care-draft` if you want to return to the previous logo and branch state.
+
