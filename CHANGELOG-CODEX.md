@@ -310,3 +310,38 @@ Commands and checks run:
 How to reverse:
 - Switch back to `codex/quiet-estate-care-draft` and leave `codex/clean-hero-headlines` alone, or restore `styles.css` and `index.html` from Git if you only want to undo these text and headline-effect changes.
 
+## 2026-05-21 - Merge clean hero headlines into quiet estate draft
+
+Purpose:
+- Commit and push the clean hero headline branch, then merge it into `codex/quiet-estate-care-draft`.
+
+Branch:
+- Started on `codex/clean-hero-headlines`.
+- Pushed `codex/clean-hero-headlines` to GitHub.
+- Switched to `codex/quiet-estate-care-draft`.
+- Merged `codex/clean-hero-headlines` into `codex/quiet-estate-care-draft`.
+
+Results:
+- Commit created on the feature branch: `1115f86c81e4028c88949781c8cf91e77d92e2ea`.
+- The merge into `codex/quiet-estate-care-draft` completed as a fast-forward.
+- `main` and `gh-pages` were not checked out, merged into, or pushed.
+
+Archived items:
+- None.
+
+Commands and checks run:
+- `git diff --check`
+- `git diff --name-status`
+- `git status --short --branch`
+- `git log -1 --format="%an <%ae>"`
+- `git add -- CHANGELOG-CODEX.md index.html styles.css`
+- `git -c user.name="Devin Beck" -c user.email="devin6beck@gmail.com" commit -m "Clean hero headline styling"`
+- `git push -u origin codex/clean-hero-headlines`
+- `git fetch origin codex/quiet-estate-care-draft`
+- `git switch codex/quiet-estate-care-draft`
+- `git log --oneline --decorate origin/codex/quiet-estate-care-draft..HEAD`
+- `git merge --ff-only codex/clean-hero-headlines`
+
+How to reverse:
+- Revert commit `1115f86c81e4028c88949781c8cf91e77d92e2ea` on `codex/quiet-estate-care-draft`, or switch back to `codex/clean-hero-headlines` if you want to inspect the source branch separately.
+
