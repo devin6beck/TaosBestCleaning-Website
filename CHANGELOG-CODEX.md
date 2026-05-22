@@ -491,3 +491,48 @@ Verification notes:
 How to reverse:
 - Restore `about.html`, `styles.css`, and `CHANGELOG-CODEX.md` from Git on this branch, or switch back to `codex/quiet-estate-care-draft` and leave this branch alone.
 
+## 2026-05-21 - Save and merge copy polish branch
+
+Purpose:
+- Save the copy polish work, push the feature branch, and merge it into `codex/quiet-estate-care-draft` safely.
+
+Branch:
+- Started on `codex/copy-polish-about-services-contact`.
+- Pushed `codex/copy-polish-about-services-contact` to GitHub.
+- Switched to `codex/quiet-estate-care-draft`.
+- Merged `codex/copy-polish-about-services-contact` into `codex/quiet-estate-care-draft`.
+
+Results:
+- Feature branch commit created: `1f41204`.
+- The merge into `codex/quiet-estate-care-draft` completed as a fast-forward.
+- `main` and `gh-pages` were not checked out, merged into, or pushed.
+
+Archived items:
+- None.
+
+Commands and checks run:
+- `git status --short --branch --untracked-files=all`
+- `git branch --show-current`
+- `git log -1 --format="%an <%ae>"`
+- `git diff --stat`
+- `git diff --name-status`
+- `git diff -- services.html`
+- `git diff -- about.html styles.css`
+- `git diff --check`
+- `Select-String` checks for current CTA wording and retired public wording.
+- `git branch --all --verbose --no-abbrev`
+- `git add -- CHANGELOG-CODEX.md about.html availability.html contact.html employment.html index.html services.html styles.css`
+- `git diff --cached --name-status`
+- `git diff --cached --stat`
+- `git -c user.name="Devin Beck" -c user.email="devin6beck@gmail.com" commit -m "Polish website copy and CTAs"`
+- `git push -u origin codex/copy-polish-about-services-contact`
+- `git fetch origin codex/quiet-estate-care-draft`
+- `git rev-parse codex/quiet-estate-care-draft`
+- `git rev-parse origin/codex/quiet-estate-care-draft`
+- `git log --oneline --decorate --graph --all -n 12`
+- `git switch codex/quiet-estate-care-draft`
+- `git merge --ff-only codex/copy-polish-about-services-contact`
+
+How to reverse:
+- Revert commit `1f41204` on `codex/quiet-estate-care-draft` to undo the copy polish changes, or inspect `codex/copy-polish-about-services-contact` if you want to review the source branch separately.
+
