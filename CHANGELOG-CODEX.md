@@ -536,3 +536,45 @@ Commands and checks run:
 How to reverse:
 - Revert commit `1f41204` on `codex/quiet-estate-care-draft` to undo the copy polish changes, or inspect `codex/copy-polish-about-services-contact` if you want to review the source branch separately.
 
+## 2026-05-21 - Logo file update and main merge preparation
+
+Purpose:
+- Save the user's logo file change, push `codex/quiet-estate-care-draft`, and prepare to merge the quiet branch into `main`.
+
+Files changed:
+- `index.html`
+- `about.html`
+- `services.html`
+- `contact.html`
+- `availability.html`
+- `employment.html`
+- `Images/Logo 1 SVG.svg`
+- `Images/Logo 1 PNG.png`
+- `CHANGELOG-CODEX.md`
+
+Changes made:
+- Updated the shared header logo reference on all public HTML pages to use `Images/Logo%201%20SVG.svg`.
+- Added the new SVG logo file used by the pages.
+- Added the matching new PNG logo file for reference.
+- Normalized the logo path to use web-style forward slashes and encoded spaces.
+
+Branch notes:
+- `gh-pages` was visible on GitHub at `4a45d2e9fe435055033f088264dd1a1dba147a3d` before this commit.
+- `main` was visible on GitHub at `4a45d2e9fe435055033f088264dd1a1dba147a3d` before this commit.
+
+Archived items:
+- None.
+
+Commands and checks run:
+- `git status --short --branch --untracked-files=all`
+- `git branch --show-current`
+- `git branch --all --verbose --no-abbrev`
+- `git diff --name-status`
+- `git diff -- about.html availability.html contact.html employment.html index.html services.html`
+- `Get-ChildItem -LiteralPath 'Images\Logo 1 PNG.png','Images\Logo 1 SVG.svg'`
+- `git ls-remote --heads origin main gh-pages codex/quiet-estate-care-draft`
+- `Select-String` checks for header logo references.
+
+How to reverse:
+- Revert the logo update commit on `codex/quiet-estate-care-draft`, or restore the HTML pages and new logo files from Git history.
+
