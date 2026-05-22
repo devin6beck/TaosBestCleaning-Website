@@ -345,3 +345,149 @@ Commands and checks run:
 How to reverse:
 - Revert commit `1115f86c81e4028c88949781c8cf91e77d92e2ea` on `codex/quiet-estate-care-draft`, or switch back to `codex/clean-hero-headlines` if you want to inspect the source branch separately.
 
+## 2026-05-21 - About, Services, and Contact copy polish
+
+Purpose:
+- Create a separate branch from `codex/quiet-estate-care-draft` and finish requested copy polish changes for the About, Services, and Contact pages.
+
+Branch:
+- Created and switched to `codex/copy-polish-about-services-contact`.
+
+Files changed:
+- `about.html`
+- `services.html`
+- `contact.html`
+- `styles.css`
+- `CHANGELOG-CODEX.md`
+
+Changes made:
+- Updated the About page hero headline to `Built on trust.`
+- Updated the About page intro paragraph wording.
+- Replaced the About page `Local accountability` box with `Clear communication`.
+- Updated the About page consultation CTA headline.
+- Updated the Services page hero headline.
+- Changed `Monthly home check-ins` to `Regular home check-ins`.
+- Updated the Services page home check-in description.
+- Removed the Services page pricing banner.
+- Changed the Services page second-home support copy from `monthly check-ins` to `regular check-ins`.
+- Added extra vertical space above the Services page walkthrough CTA supporting text.
+- Updated the Services page walkthrough CTA supporting text.
+- Updated the Contact page hero headline and supporting text.
+- Changed the Contact page location bullet to `Property location in or around Taos County`.
+- Updated the Contact page `What happens next` headline.
+
+Archived items:
+- None.
+
+Commands and checks run:
+- `git status --short --branch`
+- `git branch --list codex/copy-polish-about-services-contact`
+- `git branch --show-current`
+- `git switch -c codex/copy-polish-about-services-contact`
+- `Get-Content` checks for `about.html`, `services.html`, `contact.html`, `styles.css`, and `CHANGELOG-CODEX.md`
+- `Get-Date -Format 'yyyy-MM-dd HH:mm:ss zzz'`
+- `git diff -- about.html services.html contact.html styles.css`
+- Text searches confirming the replaced wording is present and the old wording is gone.
+- `git diff --check`
+- `git diff --name-status`
+- Browser preview attempts using the Codex in-app browser.
+- `Get-NetTCPConnection -LocalPort 8787 -ErrorAction SilentlyContinue`
+- `Get-Command python -ErrorAction SilentlyContinue`
+- `Start-Process -FilePath python -ArgumentList '-m','http.server','8787','--bind','127.0.0.1' -WorkingDirectory 'C:\Users\edwar\Files\AI\Business Projects\TBC Website' -WindowStyle Hidden`
+- `Invoke-WebRequest -Uri 'http://127.0.0.1:8787/services.html' -UseBasicParsing`
+- `python --version`
+- `py --version`
+
+Verification notes:
+- The old requested phrases no longer appear in `about.html`, `services.html`, or `contact.html`.
+- The new requested phrases appear in the expected files.
+- `git diff --check` reported no whitespace errors. It only showed normal Git line-ending warnings for this Windows working copy.
+- The in-app browser refused both the raw local file and local preview URLs, so visual browser verification could not be completed in this session.
+- A temporary local preview server was attempted, but Python is not installed in this shell and no server remained running.
+
+How to reverse:
+- Switch back to `codex/quiet-estate-care-draft` and leave this branch alone, or restore `about.html`, `services.html`, `contact.html`, `styles.css`, and `CHANGELOG-CODEX.md` from Git on this branch if you only want to undo this batch.
+
+## 2026-05-21 - Copy consistency and CTA cleanup
+
+Purpose:
+- Apply follow-up copy recommendations approved by the user and make call-to-action wording more consistent.
+
+Files changed:
+- `index.html`
+- `about.html`
+- `services.html`
+- `contact.html`
+- `availability.html`
+- `employment.html`
+- `CHANGELOG-CODEX.md`
+
+Changes made:
+- Changed remaining public page wording from `Monthly home check-ins` / `monthly home check-ins` to `Regular home check-ins` / `regular home check-ins`.
+- Updated the homepage Services section headline to `Ongoing cleaning services and property care built around how and when your home is used.`
+- Updated hidden header tagline text from `Quiet home care in Taos` to `Quiet cleaning and home care in Taos` for consistency. The typed tagline is currently hidden visually because the logo image is the visible brand.
+- Standardized main CTA button text to `Start the conversation`.
+- Removed extra secondary CTA buttons from the homepage hero, homepage bottom CTA, About bottom CTA, Services bottom CTA, and Availability bottom CTA.
+- Changed the Services page check-in heading to `Regular visits for peace of mind while you are away.`
+- Changed the Services page second-home heading to `Property support for homes that are not occupied full time.`
+- Changed the Services page bottom CTA eyebrow from `Walkthrough` to `Consultation`.
+
+Archived items:
+- None.
+
+Commands and checks run:
+- `git status --short --branch`
+- `rg` text checks for old and new wording across website pages.
+- `Get-Date -Format 'yyyy-MM-dd HH:mm:ss zzz'`
+- `Get-Content` checks for current page content before editing.
+- `rg -n '<h1|<h2|<h3' index.html about.html services.html contact.html availability.html employment.html`
+- `rg -n 'button-secondary|button-primary|<div class="cta-actions"' index.html about.html services.html contact.html availability.html employment.html`
+- `Select-String` checks for retired button labels and old service wording.
+- `git diff --check`
+- `git diff --name-status`
+- `git diff --stat`
+
+Verification notes:
+- Remaining old public wording for `Monthly home check-ins`, `One-hour minimum visits`, `not occupied every day`, and old CTA button labels was not found in the website pages.
+- `Start the conversation` is now the only visible primary button wording in the header and CTA areas.
+- No `button-secondary` links remain in the checked HTML files.
+- `git diff --check` reported no whitespace errors. It only showed normal Git line-ending warnings for this Windows working copy.
+
+How to reverse:
+- Restore `index.html`, `about.html`, `services.html`, `contact.html`, `availability.html`, `employment.html`, and `CHANGELOG-CODEX.md` from Git on this branch, or switch back to `codex/quiet-estate-care-draft` and leave this branch alone.
+
+## 2026-05-21 - About CTA wording and button wrapping
+
+Purpose:
+- Apply the user's requested About page consultation CTA copy update and keep `Start the conversation` buttons on one line.
+
+Files changed:
+- `about.html`
+- `styles.css`
+- `CHANGELOG-CODEX.md`
+
+Changes made:
+- Kept the About page CTA eyebrow as `Consultation`.
+- Changed the About page CTA headline to `Request a quote tailored to the property.`
+- Changed the About page CTA supporting text to `Tell us about the location, square footage, desired frequency, and any second-home care services you may be interested in.`
+- Added `white-space: nowrap;` to the shared `.button` style so button labels do not split onto two lines.
+
+Archived items:
+- None.
+
+Commands and checks run:
+- `git status --short --branch`
+- `rg` checks for the old and new About CTA copy.
+- `rg` checks for `.button`, `.cta-actions`, and `Start the conversation`.
+- `git diff -- about.html styles.css CHANGELOG-CODEX.md`
+- `git diff --check`
+
+Verification notes:
+- The old About CTA headline and supporting sentence no longer appear in `about.html`.
+- The new About CTA headline and supporting sentence appear in `about.html`.
+- The shared `.button` style includes `white-space: nowrap;`.
+- `git diff --check` reported no whitespace errors. It only showed normal Git line-ending warnings for this Windows working copy.
+
+How to reverse:
+- Restore `about.html`, `styles.css`, and `CHANGELOG-CODEX.md` from Git on this branch, or switch back to `codex/quiet-estate-care-draft` and leave this branch alone.
+
